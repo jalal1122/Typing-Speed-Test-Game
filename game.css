@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(
+    180deg,
+    #070008 0%,
+    #42024c 20.85%,
+    #9c05b5 53.12%,
+    #080009 100%
+  );
+  color: #333;
+  width: 100vw;
+  height: 100vh;
+}
+
+h1 {
+  color: #fff;
+  font-family: "Goblin One";
+  font-size: 52px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
