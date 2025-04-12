@@ -25,4 +25,136 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  position: absolute;
+  top: 10px;
+  left: 50px;
+}
+
+h2 {
+  color: #fff;
+  font-family: "Goblin One";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: absolute;
+  top: 20px;
+  right: 50px;
+}
+
+.keyboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.key {
+  width: 50px;
+  height: 50px;
+  background-color: #fff;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.shiftKey {
+  width: 100px;
+}
+
+.spaceKey {
+  width: 200px;
+}
+.backSpace {
+  width: 200px;
+}
+
+.key:hover {
+  background-color: #f0f0f0;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+.key:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.active-key {
+  background-color: #16bcd9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.game-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+
+.correctWord{
+    color: white;
+}
+
+.wrongWord{
+    color: red;
+}
+
+.text-container{
+    width: 800px;
+    max-height: 300px;
+    border-radius: 10px;
+    background: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    overflow: auto;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    scrollbar-width: none;
+}
+
+.paraLine{
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    color: #727272;
+    padding: 10px;
+    text-align: center;
+    
+}
+
+.inputLine{
+    font-size: 24px;
+    font-family: "Poppins", sans-serif;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    background:none;
+    width: 100%;
+    overflow-y: auto;
+    border: none;
+    outline: none;
+    text-align: left;
 }
